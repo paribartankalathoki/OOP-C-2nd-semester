@@ -15,19 +15,21 @@ class student
             cout<<"\n Roll : "<<roll<<endl;
             cout<<"\n Name : "<<nam<<endl;
             cout<<"\n Address :"<<add<<endl;
-        }};
-
-        int main()
-        {
-            student obj;
-            ifstream fin;
-            fin.open("BinaryFile.dat",ios::binary|ios::in);
-            fin.read((char *)&obj,sizeof(student));
-            while(fin)
-            {
-                obj.input();
-                fin.read((char *)&obj,sizeof(student));
-            }
-            fin.close();
-            return 0;
         }
+};
+
+int main()
+{
+        student obj;
+        ifstream fin;
+        fin.open("BinaryFile.dat",ios::binary|ios::in);
+        fin.read((char *)&obj,sizeof(student));
+        while(fin)
+        {
+            obj.input();
+            fin.read((char *)&obj,sizeof(student));
+        }
+        fin.close();
+
+        return 0;
+}

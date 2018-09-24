@@ -8,8 +8,8 @@ int gre(int a[])
     {
         if(a[i]>g)
             g=a[i];
-        return g;
     }
+    return g;
 }
 
 int main()

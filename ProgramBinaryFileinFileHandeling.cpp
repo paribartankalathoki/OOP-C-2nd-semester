@@ -37,4 +37,6 @@ int main()
             cin>>ch;
         }while(ch=='y'||ch=='y');
         fout.close();
-    }
+
+        return 0;
+}

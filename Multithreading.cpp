@@ -2,7 +2,7 @@
 #include <thread>
 using namespace std;
 
-int threadfunc()
+void threadfunc()
 {
     cout<<"Welcome"<<endl;
 }

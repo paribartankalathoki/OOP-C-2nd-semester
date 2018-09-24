@@ -6,7 +6,7 @@ int sum(int a[10])
     {
         sum=sum+a[i];
     }
-    cout<<"Sum is : "<<sum<<endl;`  1qaw
+    cout<<"Sum is : "<<sum<<endl;
 }
 int main()
 {

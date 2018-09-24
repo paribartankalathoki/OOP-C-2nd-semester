@@ -1,5 +1,5 @@
 #include <iostream>
-#include <thread>
+#include <pthread.h>
 using namespace std;
 
 int threadfunc()
@@ -9,7 +9,7 @@ int threadfunc()
 
 int main()
 {
-    thread functiontest(threadfunc);
+    pthread functiontest(threadfunc);
 
     return 0;
 }

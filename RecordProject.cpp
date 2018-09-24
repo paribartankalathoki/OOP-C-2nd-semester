@@ -1,15 +1,13 @@
 #include <iostream>
 #include <string.h>
 #include<stdlib.h>
-#include<conio.h>
-
 
 using namespace std;
 
 class record
 {
     private:
-        char nam[20],g[5],addr;
+        char nam[20],g[],addr;
         long int dob,id,cell_no;
     public:
         void input();
@@ -40,10 +38,9 @@ void record::display()
 
 int main()
 {
-    record obj[10];
+    record obj[50];
 
     int choice,n,i;
-    char nn;
 
         cout<<"How many do you want? " ;
         cin>>n;
@@ -66,7 +63,9 @@ int main()
 
              default:
                 cout<<"Invalid Input"<<endl;
-        }        
-   getch();
-   return 0;
+        }
+        system("pause");
+        main();
+
+    return 0;
 }

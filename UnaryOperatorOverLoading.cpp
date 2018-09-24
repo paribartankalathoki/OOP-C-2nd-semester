@@ -10,10 +10,10 @@ class example
             cout<<"Enter a and b: ";
             cin>>a>>b;
         }
-        void operator -()   //operator function as a member function
+        void operator ++()   //operator function as a member function
         {
-            a=-a;
-            b=-b;
+            ++a;
+            ++b;
         }
         void display()
         {
@@ -27,7 +27,7 @@ int main()
     e.input();
     cout<<"Before overloading unary minus operator"<<endl;
     e.display();
-    -e;
+    ++e;
     cout<<"After overloading unary minus operator"<<endl;
     e.display();
     getch();
